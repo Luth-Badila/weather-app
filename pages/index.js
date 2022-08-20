@@ -43,7 +43,7 @@ export default function Home() {
         <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4 text-black z-10">
           <form onSubmit={fetchWeather} className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-black text-black rounded-2xl">
             <div>
-              <input onChange={(e) => setCity(e.target.value)} className="bg-transparent border-none text-black focus:outline-none text-2xl " type="search" placeholder="Search your city" />
+              <input onChange={(e) => setCity(e.target.value)} className="bg-transparent border-none text-black focus:outline-none text-2xl placeholder:text-black " type="search" placeholder="Search your city" />
             </div>
             <button onClick={fetchWeather} className="text-white">
               <GrSearch size={20} />
